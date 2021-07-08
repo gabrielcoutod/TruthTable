@@ -14,4 +14,12 @@ ex:
 ```
 python3 truth_table.py "(p->(q^~p))->((p->~q)^(p->q))"
 ```
-![Example](https://github.com/gabrielcoutod/TruthTable/blob/master/example.png)
+Will have the following output:
+```
+p      q      ((p -> (q ^ ~p)) -> ((p -> ~q) ^ (p -> q)))
+-----  -----  ---------------------------------------------
+False  False  True
+False  True   True
+True   False  True
+True   True   True
+```
